@@ -44,7 +44,8 @@ def score_nodes(start, nodes, already_opened=[], time=1):
     notes = {}
     best = 0
     valve = valves[start]
-    q = [(n, 1, [], 0) for n in valve["next"]]
+    q: list[tuple[str, int, list[str], int]] = [
+        (n, 1, [], 0) for n in valve["next"]]
 
     while len(q):
         node, depth, chain, prescore = q.pop(0)
