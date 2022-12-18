@@ -17,7 +17,7 @@ mkdir -p "$1"
 
 # Set the filenames
 src_files=(".stubs/day.py" ".stubs/daypt2.py" ".stubs/tools.py" ".stubs/tmpl_data.txt" ".stubs/tmpl_data_test.txt")
-dest_files=("$1/$1pt1.py" "$1/$1pt2.py" "$1/tools.py" "$1/data.txt" "$1/data_test.txt")
+dest_files=("$1/$1.py" "$1/$1pt2.py" "$1/tools.py" "$1/data.txt" "$1/data_test.txt")
 
 # Loop over the destination filenames
 for i in "${!dest_files[@]}"; do
